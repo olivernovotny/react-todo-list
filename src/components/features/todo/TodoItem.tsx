@@ -48,7 +48,12 @@ export function TodoItem({ todo }: { todo: Todo }) {
         </ItemDescription>
       </ItemContent>
       <ItemActions>
-        <Button variant="destructive" size="sm" onClick={handleDelete}>
+        <Button
+          variant="destructive"
+          size="sm"
+          onClick={handleDelete}
+          aria-label="Delete todo"
+        >
           Delete
         </Button>
       </ItemActions>

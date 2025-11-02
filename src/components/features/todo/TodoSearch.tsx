@@ -54,12 +54,17 @@ export function TodoSearch({ searchQuery, onSearchChange }: TodoSearchProps) {
         value={localQuery}
         onChange={handleChange}
         placeholder="Search todos..."
+        aria-label="Search todos"
       />
       <InputGroupAddon>
         <Search />
       </InputGroupAddon>
       <InputGroupAddon align="inline-end">
-        <X onClick={handleClear} className="h-4 w-4 cursor-pointer" />
+        <X
+          onClick={handleClear}
+          className="h-4 w-4 cursor-pointer"
+          aria-label="Clear search"
+        />
       </InputGroupAddon>
     </InputGroup>
   )

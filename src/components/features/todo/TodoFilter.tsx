@@ -28,7 +28,7 @@ export function TodoFilter({ filter, onFilterChange, todos }: TodoFilterProps) {
 
   const renderTrigger = (value: TodoFilter, text: string, count: number) => {
     return (
-      <TabsTrigger value={value}>
+      <TabsTrigger value={value} aria-label={`Filter todos by ${text}`}>
         {text} {`(${count})`}
       </TabsTrigger>
     )
